@@ -74,9 +74,9 @@ body {
   right: auto;
   transform: translateY(-50%);
   min-width: 320px;
-  max-width: 600px;
-  width: 60rem;
-  font-size: 1.5rem;
+  max-width: 500px;
+  width: 40rem;
+  font-size: 1.2rem;
   color: #050505;
   font-family: 'Courier New', Courier, monospace;
   white-space: pre-line;
