@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `¡Feliz cumpleaños, Evelyn!:\n\nHoy es tu día, y de verdad espero que lo estés pasando increible. Con este pequeño mensaje espero sacarte una sonrisa y decirte lo especial que eres para mi.\n\nTambién quiero aprovechar para decirte que te quiero. Aunque no hayamos compartido tanto tiempo, lo poco que he llegado a conocerte fue más que suficiente para darme cuenta de lo auténtica que eres. Lo que me gusta de ti es tu forma en la que no intentas agradarle a nadie, simplemente siendo tu misma, me gusto más de lo que pensé.\n\nY bueno, solo espero que en lo que queda del año pueda seguir compartiendo momentos contigo.`;  } else {
+    text = `¡Feliz cumpleaños, Evelyn!🎉:\n\nHoy es tu día, y de verdad espero que lo estés pasando increible. Con este pequeño mensaje espero sacarte una sonrisa y decirte lo especial que eres para mi.\n\nTambién quiero aprovechar para decirte que te aprecio mucho, aunque no hayamos compartido tanto tiempo, lo poco que he llegado a conocerte fue más que suficiente para darme cuenta de lo auténtica que eres. Y eso es lo que me gusta de ti, tu forma en la que no intentas agradarle a nadie simplemente siendo tu misma, sin aparentar, ni fingir ser alguien que no eres, eso me gusto más de lo que pensé.\n\nY bueno sin más nada que decir, solo espero que en lo que queda del año pueda seguir compartiendo buenos momentos contigo, espero me lo permitas.`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
@@ -146,8 +146,8 @@ function showCountdown() {
   const container = document.getElementById('countdown');
   let startParam = getURLParam('start');
   let eventParam = getURLParam('event');
-  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2024-12-31T00:00:00'); 
-  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2025-12-31T00:00:00');
+  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2023-09-22T00:00:00'); 
+  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2030-12-31T00:00:00');
 
   function update() {
     const now = new Date();
